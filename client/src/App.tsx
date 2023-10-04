@@ -1,6 +1,9 @@
+import { GlobalStyles } from './styles';
+
 function App() {
   return (
     <>
+      <GlobalStyles />
       <h1>Proshop</h1>
     </>
   )
