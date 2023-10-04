@@ -3,4 +3,7 @@ export const theme = {
     white: '#FFFFFF',
     black: '#000000',
   },
+  fonts: {
+    primary: '"Nunito Sans", sans-serif',
+  },
 }
