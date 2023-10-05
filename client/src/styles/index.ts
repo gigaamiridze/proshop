@@ -2,6 +2,7 @@
 export { default as HeaderContainer } from './components/header/HeaderContainer';
 
 // Shared Components
+export { default as FlexContainer } from './components/shared/FlexContainer';
 export { default as Container } from './components/shared/Container';
 
 export { default as GlobalStyles } from './Global';
