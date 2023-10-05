@@ -1,9 +1,14 @@
 import { Outlet } from 'react-router-dom';
+import { Container } from '../styles';
 
 function Root() {
   return (
     <>
-      <Outlet />
+      <main>
+        <Container>
+          <Outlet />
+        </Container>
+      </main>
     </>
   )
 }
