@@ -3,10 +3,13 @@ import { IFlexBoxProps } from '../../../interfaces';
 
 const FlexBox = styled.div<IFlexBoxProps>`
   display: flex;
-  ${({ flexDirection, alignItems, justifyContent }) => css`
-    flex-direction: ${flexDirection ? flexDirection : 'row'};
-    align-items: ${alignItems ? alignItems : 'stretch'};
-    justify-content: ${justifyContent ? justifyContent : 'flex-start'};
+  ${({ flexDirection, alignItems, justifyContent, gap, rowGap, columnGap }) => css`
+    flex-direction: ${flexDirection || 'row'};
+    align-items: ${alignItems || 'stretch'};
+    justify-content: ${justifyContent || 'flex-start'};
+    gap: ${gap ? `${gap}px` : 0};
+    row-gap: ${rowGap ? `${rowGap}px` : 0};
+    column-gap: ${columnGap ? `${columnGap}px` : 0};
   `}
 `;
 
