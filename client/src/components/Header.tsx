@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import { HeaderContainer, Container, FlexBox } from '../styles';
+import { PageRoutes } from '../constants';
 import { Heading } from '../components';
 
 function Header() {
@@ -6,14 +8,16 @@ function Header() {
     <HeaderContainer>
       <Container>
         <FlexBox alignItems='center' justifyContent='space-between'>
-          <Heading 
-            title='proshop' 
-            type='h4' 
-            color='white'
-            fontWeight='600'
-            textTransform='uppercase'
-            letterSpacing={1}
-          />
+          <Link to={PageRoutes.ROOT}>
+            <Heading 
+              title='proshop' 
+              type='h4' 
+              color='white'
+              fontWeight='600'
+              textTransform='uppercase'
+              letterSpacing={1}
+            />
+          </Link>
         </FlexBox>
       </Container>
     </HeaderContainer>
