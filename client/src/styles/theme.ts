@@ -14,12 +14,12 @@ export const theme = {
     darkGreen: 'rgba(75, 191, 115, .5)',
   },
   fonts: {
-    primary: '"Nunito Sans", sans-serif',
+    nunito: '"Nunito Sans", sans-serif',
   },
   fontSizes: {
     small: '12px',
     regular: '14px',
-    medium: '18px',
+    medium: '17.5px',
     large: '20px',
     xLarge: '24px',
     xxLarge: '32px',

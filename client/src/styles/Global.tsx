@@ -50,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
   
   // Element styles
   body {
-    font-family: ${({ theme }) => theme.fonts.primary};
+    font-family: ${({ theme }) => theme.fonts.nunito};
   }
 `;
 

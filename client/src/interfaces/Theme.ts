@@ -19,8 +19,8 @@ export interface IColors {
   darkGreen: string;
 }
 
-interface IFonts {
-  primary: string;
+export interface IFonts {
+  nunito: string;
 }
 
 export interface IFontSizes {
