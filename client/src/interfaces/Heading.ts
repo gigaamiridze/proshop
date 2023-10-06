@@ -1,0 +1,16 @@
+import { IColors } from './Theme';
+
+export type HeadingType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
+export interface IHeadingStyledProps {
+  type: HeadingType;
+  color?: keyof IColors;
+  fontWeight?: '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900' | 'lighter' | 'normal' | 'bold' | 'bolder';
+  lineHeight?: number | 'normal' | 'initial' | 'inherit';
+  letterSpacing?: number | 'normal' | 'initial' | 'inherit';
+  textTransform?: 'capitalize' | 'uppercase' | 'lowercase' | 'initial' | 'inherit' | 'none';
+}
+
+export interface IHeadingProps extends IHeadingStyledProps {
+  title: string;
+}

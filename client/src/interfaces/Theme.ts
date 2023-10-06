@@ -1,9 +1,10 @@
 export interface ITheme {
   colors: IColors;
   fonts: IFonts;
+  fontSizes: IFontSizes;
 }
 
-interface IColors {
+export interface IColors {
   white: string;
   black: string;
   primary: string;
@@ -20,4 +21,13 @@ interface IColors {
 
 interface IFonts {
   primary: string;
+}
+
+export interface IFontSizes {
+  small: string;
+  regular: string;
+  medium: string;
+  large: string;
+  xLarge: string;
+  xxLarge: string;
 }

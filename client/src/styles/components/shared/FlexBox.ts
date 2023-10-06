@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { IFlexProps } from '../../../interfaces';
+import { IFlexBoxProps } from '../../../interfaces';
 
-const FlexContainer = styled.div<IFlexProps>`
+const FlexBox = styled.div<IFlexBoxProps>`
   display: flex;
   ${({ flexDirection, alignItems, justifyContent }) => css`
     flex-direction: ${flexDirection ? flexDirection : 'row'};
@@ -10,4 +10,4 @@ const FlexContainer = styled.div<IFlexProps>`
   `}
 `;
 
-export default FlexContainer;
+export default FlexBox;

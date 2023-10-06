@@ -1,2 +1,3 @@
 export * from './Theme';
-export * from './Flex';
+export * from './FlexBox';
+export * from './Heading';
