@@ -10,11 +10,11 @@ export const SearchInput = styled.input`
     background-color: ${theme.colors.white};
     color: ${theme.colors.davyGray};
     font-family: ${theme.fonts.nunito};
+    border-radius: ${theme.borderRadius.small};
   `}
   width: 205px;
   height: 100%;
   padding: 0 16px;
-  border-radius: 3px;
   border: none;
   outline: none;
   font-size: 15px;

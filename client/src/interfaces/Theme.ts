@@ -2,6 +2,7 @@ export interface ITheme {
   colors: IColors;
   fonts: IFonts;
   fontSizes: IFontSizes;
+  borderRadius: IBorderRadius;
 }
 
 export interface IColors {
@@ -30,4 +31,8 @@ export interface IFontSizes {
   large: string;
   xLarge: string;
   xxLarge: string;
+}
+
+export interface IBorderRadius extends IFontSizes {
+  circle: string;
 }

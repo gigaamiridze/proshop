@@ -23,5 +23,14 @@ export const theme = {
     large: '20px',
     xLarge: '24px',
     xxLarge: '32px',
-  }
+  },
+  borderRadius: {
+    small: '3px',
+    regular: '5px',
+    medium: '10px',
+    large: '15px',
+    xLarge: '20px',
+    xxLarge: '25px',
+    circle: '50%',
+  },
 }
