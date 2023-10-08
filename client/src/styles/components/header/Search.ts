@@ -10,6 +10,8 @@ export const SearchInput = styled.input`
     background-color: ${theme.colors.white};
     color: ${theme.colors.davyGray};
     font-family: ${theme.fonts.nunito};
+    font-size: ${theme.fontSizes.regular};
+    font-weight: ${theme.fontWeights.medium};
     border-radius: ${theme.borderRadius.small};
   `}
   width: 205px;
@@ -17,8 +19,6 @@ export const SearchInput = styled.input`
   padding: 0 16px;
   border: none;
   outline: none;
-  font-size: 15px;
-  font-weight: 500;
   
   &::placeholder {
     color: ${({ theme }) => theme.colors.davyGray};
