@@ -44,4 +44,5 @@ export const theme = {
     xxLarge: '25px',
     circle: '50%',
   },
+  transition: 'all 0.2s ease-in-out',
 }

@@ -4,6 +4,7 @@ export interface ITheme {
   fontSizes: IFontSizes;
   fontWeights: IFontWeights;
   borderRadius: IBorderRadius;
+  transition: string;
 }
 
 export interface IColors {

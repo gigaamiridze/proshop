@@ -20,7 +20,7 @@ const HeadingStyled = styled.div<IHeadingStyledProps>`
     font-family: ${fontFamily || theme.fonts.nunito};
     font-weight: ${fontWeight || 'normal'};
     line-height: ${lineHeight || 'normal'};
-    letter-spacing: ${`${letterSpacing}px` || 0};
+    letter-spacing: ${letterSpacing ? `${letterSpacing}px` : 0};
     text-transform: ${textTransform || 'none'};
   `}
 `;
