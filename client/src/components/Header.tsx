@@ -1,22 +1,8 @@
 import { Link } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa';
-import { HeaderContainer, Container, FlexBox, SearchForm, SearchInput, SearchButton } from '../styles';
+import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import { HeaderContainer, Container, FlexBox, SearchForm, SearchInput, SearchButton, RightContent } from '../styles';
 import { PageRoutes } from '../constants';
 import { Heading } from '../components';
-
-import { styled, css } from 'styled-components';
-
-const RightContent = styled(FlexBox)`
-  a {
-    ${({ theme }) => css`
-      color: ${theme.colors.gray};
-    `}
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
-    padding: 8px;
-  }
-`;
 
 function Header() {
   return (
@@ -44,6 +30,17 @@ function Header() {
               <FaShoppingCart />
               <Heading 
                 title='cart'
+                type='h5'
+                color='gray'
+                fontWeight='600'
+                textTransform='uppercase'
+                letterSpacing={1}
+              />
+            </Link>
+            <Link to={PageRoutes.LOGIN}>
+              <FaUser />
+              <Heading 
+                title='login'
                 type='h5'
                 color='gray'
                 fontWeight='600'

@@ -1,5 +1,6 @@
 // Header Components
 export { default as HeaderContainer } from './components/header/HeaderContainer';
+export { default as RightContent } from './components/header/RightContent';
 export * from './components/header/Search';
 
 // Shared Components
