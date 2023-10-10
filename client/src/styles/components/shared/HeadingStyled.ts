@@ -14,15 +14,20 @@ const getFontSize = (type: HeadingType, fontSizes: IFontSizes) => {
 }
 
 const HeadingStyled = styled.div<IHeadingStyledProps>`
-  ${({ theme, type, color, fontFamily, fontWeight, lineHeight, letterSpacing, textTransform }) => css`
+  ${({ theme, type, color, fontFamily, fontWeight, lineHeight, letterSpacing, textTransform, hoverColor }) => css`
     font-size: ${getFontSize(type, theme.fontSizes)};
-    color: ${color || theme.colors.primary};
+    color: ${color ? theme.colors[color] : theme.colors.primary};
     font-family: ${fontFamily || theme.fonts.nunito};
     font-weight: ${fontWeight || 'normal'};
     line-height: ${lineHeight || 'normal'};
     letter-spacing: ${letterSpacing ? `${letterSpacing}px` : 0};
     text-transform: ${textTransform || 'none'};
+    transition: ${hoverColor ? theme.transition : null};
   `}
+
+  &:hover {
+    color: ${({ theme, hoverColor }) => hoverColor ? theme.colors[hoverColor] : null};
+  }
 `;
 
 export default HeadingStyled;
